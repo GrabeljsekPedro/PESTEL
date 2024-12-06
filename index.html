@@ -1,0 +1,285 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PESTEL</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_140560000000000001/attachments/428118/icon_6fd7e25e297677b6ea7fbc9f28afe7ae.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+</head>
+
+<body class="h-full w-full font-sans">
+  <header class="h-[10%] text-center content-center">
+    <h1 class="text-4xl font-bold">PESTEL</h1>
+  </header>
+  <main class="h-[90%] w-full flex flex-col space-y-6 pb-6">
+    <div class="w-[90%] grid xl:grid-cols-6 md:grid-cols-3 gap-4 h-lvh mx-auto">
+      <div class="text-xl rounded-md bg-gradient-to-br from-indigo-600 to-indigo-300 p-3 shadow-lg">
+        <h2 class="flex items-center text-white italic">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-6 mr-2 fill-white">
+            <path
+              d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8L32 192c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9l0-.9 4.4-1.6L240.1 4.2zM64 224l64 0 0 192 40 0 0-192 64 0 0 192 48 0 0-192 64 0 0 192 40 0 0-192 64 0 0 196.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512L32 512c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1L64 224z" />
+          </svg>
+          Político
+        </h2>
+        <div id="politico" class="p-2 mt-2 space-y-2 content-center">
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Regulaciones comerciales</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Cambios en las leyes fiscales</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Tensiones internacionales</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="text-xl rounded-md bg-gradient-to-br from-blue-600 to-blue-300 p-3 shadow-lg">
+        <h2 class="flex items-center text-white italic">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="size-6 mr-2 fill-white">
+            <path
+              d="M64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L64 64zm64 320l-64 0 0-64c35.3 0 64 28.7 64 64zM64 192l0-64 64 0c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64l0 64-64 0zm64-192c-35.3 0-64-28.7-64-64l64 0 0 64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+          </svg>
+          Económico
+        </h2>
+        <div id="economico" class="p-2 mt-2 space-y-2 content-center">
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Crecimiento del comercio electrónico</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Tasas de inflación</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Fluctuación de divisas</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="text-xl rounded-md bg-gradient-to-br from-sky-600 to-sky-300 p-3 shadow-lg">
+        <h2 class="flex items-center text-white italic">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="size-6 mr-2 fill-white">
+            <path
+              d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z" />
+          </svg>
+          Social
+        </h2>
+        <div id="social" class="p-2 mt-2 space-y-2 content-center">
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Cambio en los hábitos de consumo</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Preocupación por el impacto social</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Demografía tecnológica</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="text-xl rounded-md bg-gradient-to-br from-green-600 to-green-300 p-3 shadow-lg">
+        <h2 class="flex items-center text-white italic">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-6 mr-2 fill-white">
+            <path
+              d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+          </svg>
+          Tecnológico
+        </h2>
+        <div id="tecnologico" class="p-2 mt-2 space-y-2 content-center">
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Innovación en IA</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Logística automatizada</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Ciberseguridad</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="text-xl rounded-md bg-gradient-to-br from-lime-600 to-lime-300 p-3 shadow-lg">
+        <h2 class="flex items-center text-white italic">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-6 mr-2 fill-white">
+            <path
+              d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0l32 0c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64l32 0c123.7 0 224 100.3 224 224l0 32 0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-160C100.3 320 0 219.7 0 96z" />
+          </svg>
+          Ecológico
+        </h2>
+        <div id="ecologico" class="p-2 mt-2 space-y-2 content-center">
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Sostenibilidad</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Empaque ecológico</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Impacto ambiental del transporte</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="text-xl rounded-md bg-gradient-to-br from-yellow-600 to-yellow-300 p-3 shadow-lg">
+        <h2 class="flex items-center text-white italic">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="size-6 mr-2 fill-white">
+            <path
+              d="M384 32l128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L398.4 96c-5.2 25.8-22.9 47.1-46.4 57.3L352 448l160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0-192 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0 0-294.7c-23.5-10.3-41.2-31.6-46.4-57.3L128 96c-17.7 0-32-14.3-32-32s14.3-32 32-32l128 0c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288l144.9 0L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320l144.9 0L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z" />
+          </svg>
+          Legal
+        </h2>
+        <div id="legal" class="p-2 mt-2 space-y-2 content-center">
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Regulaciones antimonopolio</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Derechos de los trabajadores</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white">
+            <p class="grow">Privacidad de datos</p>
+            <button onclick="eliminarC(this)" class="bg-red-500 rounded-full fill-white size-7 p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-2/3 mx-auto p-4 bg-slate-200 rounded-md shadow-lg flex flex-col space-y-2">
+      <select name="" id="type" class="p-1 rounded-md bg-white border border-grey-950">
+        <option value="politico">Político</option>
+        <option value="economico">Económico</option>
+        <option value="social">Social</option>
+        <option value="tecnologico">Tecnológico</option>
+        <option value="ecologico">Ecológico</option>
+        <option value="legal">Legal</option>
+      </select>
+      <input type="text" name="comment" id="comment" placeholder="Comentario"
+        class="p-1 rounded-md bg-white border border-grey-950" />
+      <button onclick="agregarC()"
+        class="p-2 bg-blue-500 text-slate-100 hover:bg-blue-600 hover:text-slate-200 rounded-md">
+        Agregar comentario
+      </button>
+    </div>
+  </main>
+</body>
+
+</html>
